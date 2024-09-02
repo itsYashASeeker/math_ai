@@ -48,7 +48,10 @@ def do_ocr_image(image_p):
 
     def correct_ocr_errors(eq):
         eq = re.sub(r'(\d)\s+(\d)', r'\1\2', eq)
+        # eq = eq.replace(r"\frac", "")
         # eq = eq.replace('l', '1').replace('O', '0')
+        eq = eq.replace(r"\frac", "").replace("{", "(").replace("}", ")").replace(' ', '')
+
         return eq
 
 
@@ -117,7 +120,7 @@ iface = gr.Interface(
     inputs=gr.Image(type="filepath"),
     outputs=[gr.Text()],
     title="MATH AI",
-    description="Upload an image containing a mathematical equation to get the result.",
+    description="Upload an image containing a mathematical equation to get the result."
 )
 
 # Launch the Gradio interface
