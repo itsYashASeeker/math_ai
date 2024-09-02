@@ -2,7 +2,9 @@
 # AI tool which will solve your mathematical problems within few seconds
 
 Project Setup:<br>
-<code>pip install pix2text</code><br>
+```
+pip install pix2text
+```
 <code>pip install sympy</code><br>
 <code>pip install gradio</code><br>
 <code>pip install pillow</code><br>
