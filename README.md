@@ -5,15 +5,29 @@ Project Setup:<br>
 ```
 pip install pix2text
 ```
-<code>pip install sympy</code><br>
-<code>pip install gradio</code><br>
-<code>pip install pillow</code><br>
-<code>pip install opencv-python</code><br>
-<code>pip install numpy</code><br>
+```
+pip install sympy
+```
+```
+pip install gradio
+```
+```
+pip install pillow
+```
+```
+pip install opencv-python
+```
+```
+pip install numpy
+```
 
 
 For running the project:<br>
-<code>cd 'project-name'</code><br>
-<code>python main.py</code><br>
+```
+cd 'project-name'
+```
+```
+python main.py
+```
 
 
